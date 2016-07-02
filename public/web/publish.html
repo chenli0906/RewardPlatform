@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>发布任务</title>
+
+    <link rel="stylesheet" href="./js/thirdparty/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/thirdparty/bootstrap-select/bootstrap-select.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="./css/userinfo.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/publish.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="./css/jHtmlArea.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="./css/jquery-ui-1.7.2.custom.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="./js/thirdparty/font-awesome/css/font-awesome.css">-->
+
+    <!--<link href="./js/thirdparty/bootstrap-datatables/css/dataTables.bootstrap.css"  rel="stylesheet">-->
+    <!--<link href="./js/thirdparty/bootstrap-datatables/css/dataTables.tableTools.css"  rel="stylesheet">-->
+    <!--<link href="./js/thirdparty/bootstrap-datatables/css/jquery.dataTables.min.css" rel="stylesheet">-->
+
+</head>
+<body style='overflow:-Scroll;overflow-x:hidden'>
+
+    <div class="container-fluid">
+        <br>
+
+        <div class="row u_nav"><span>发布任务</span><span id="p_re" style="float:right;margin-right:30px;cursor:pointer">返回主页</span></div>
+        <hr>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <span class="pub_title">需求分类：</span>&nbsp;&nbsp;
+                <select id="t_type"  name="t_type" class="selectpicker show-tick" data-size="5" value="<%=search.type||''%>">
+                </select>
+                <hr>
+                <span class="pub_title">需求标题：</span>&nbsp;&nbsp;
+                <input type="text" id="pub_title" />
+                <hr>
+                <span class="pub_title">需求描述：</span>&nbsp;&nbsp;
+                <textarea id="pub_description" cols="50" rows="5"></textarea>
+                <hr>
+                <span class="pub_title">联系方式 ：</span>&nbsp;&nbsp;
+                <input type="text" id="pub_phone" />
+                <hr>
+				<span class="pub_title">期望时间：</span>&nbsp;&nbsp;
+                <input type="text" id="pub_time" />
+                <hr>
+                <span class="pub_title">交易模式</span><br>
+                <div class="row" style="height:auto;">
+                    <div class="col-md-8 business-mode">
+                        <div class="bounty-mode"><span>悬赏模式</span></div>
+                        <div>
+                            威客们先工作，在选中标作品<br>
+                            适合简单设计、写作策划类任务，也适合取名祝福、发帖推广、下载注册等计件业务。
+                        </div>
+                    </div>
+                    <div class="col-md-4 business-mode">
+                        <div class="bounty-num"><span>您打算支付多少赏金呢?</span></div>
+                        <div>
+                            <span></span><input id="money" type="text"/>
+                        </div>
+                    </div>
+                </div>
+                <button id="publish" onclick="getNeeds()">发布任务</button>
+                <hr>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <div class="page-footer">
+                <span class="u_tab_bor">首页</span>
+                <span class="u_tab_bor">关于我们</span>
+                <span class="u_tab_bor">联系方式</span>
+                <span class="u_tab_bor">客服中心</span>
+                <span class="u_tab_bor">合作</span>
+                <span class="u_tab_bor">网站地图</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+
+        <script type="text/javascript" src="./js/thirdparty/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/thirdparty/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/thirdparty/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="./js/thirdparty/jquery-ui-1.7.2.custom.min.js"></script>
+    <!--<script src="./js/thirdparty/jHtmlArea-0.8.js"></script>-->
+    <script src="./js/publish.js"></script>
+	<script src="./js/index.js"></script>
+    <script src="./js/thirdparty/jquery.raty.js"></script>
+
+    <!--<script src ="./js/thirdparty/bootstrap-datatables/js/jquery.dataTables.js"></script>-->
+    <!--<script src ="./js/thirdparty/bootstrap-datatables/js/dataTables.bootstrap.js"></script>-->
+    <!--<script src ="./js/thirdparty/bootstrap-datatables/js/dataTables.tableTools.js"></script>-->
+
+    <script src ="./js/thirdparty/jquery.pagination.js"></script>
+</body>
+</html>

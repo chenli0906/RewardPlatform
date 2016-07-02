@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>任务详情</title>
+
+    <link rel="stylesheet" href="./js/thirdparty/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="./css/userinfo.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/detail.css">
+    <link rel="stylesheet" type="text/css" href="./js/thirdparty/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/ystep.css" />
+
+    <!--<link href="./js/thirdparty/bootstrap-datatables/css/dataTables.bootstrap.css"  rel="stylesheet">-->
+    <!--<link href="./js/thirdparty/bootstrap-datatables/css/dataTables.tableTools.css"  rel="stylesheet">-->
+    <!--<link href="./js/thirdparty/bootstrap-datatables/css/jquery.dataTables.min.css" rel="stylesheet">-->
+</head>
+<body style='overflow:-Scroll;overflow-x:hidden'>
+
+    <div class="container-fluid">
+        <br>
+
+        <div class="row u_nav"><span>任务详情</span><span id="d_re" style="float:right;margin-right:30px;cursor:pointer">返回主页</span></div>
+        <hr>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <div class="d_info">
+                    <span class="d_count_title">任务赏金</span><span class="d_count_num">￥&nbsp;<span id="taskcount">2000</span></span><br>
+                    <span class="d_taskname">任务名</span>
+					<button id="changeButton" onclick ="changeInfo()" style="margin-left:700px;display:none;"><span id="status"> 发布</span></button>
+                    <div class="task_progress"></div>
+                </div>
+                <div class="d_req">
+                    <span>任务需求</span><br>
+                    <textarea id="u_description"></textarea>
+                </div>
+                <div class="d_complete">
+                    <div class="completer">
+                        <img class="d_complete_photo" src="./images/u_photo2.jpg" />
+                        <div>
+                            <span class="tname">小强</span><br>
+                            <span class="cred">星级：</span><span id="credit1"></span>
+                            <span style="margin-left:50px">好评：</span><span id="good1">15</span>
+                            <span style="margin-left:60px">完成：</span><span id="completenum1">22</span>
+                            <button id="employ1" style="margin-left:50px;width:140px" onclick="apply()" >雇用他</button>
+                        </div>
+                    </div>
+                    <div class="completer">
+                        <img class="d_complete_photo" src="./images/u_photo2.jpg" />
+                        <div>
+                            <span class="tname">大强</span><br>
+                            <span class="cred">星级：</span><span id="credit2"></span>
+                            <span style="margin-left:50px">好评：</span><span id="good2">165</span>
+                            <span style="margin-left:50px">完成：</span><span id="completenum2">185</span>
+                            <button id="employ2" style="margin-left:50px;width:140px" onclick="apply()" >雇用他</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <hr>
+            <div class="page-footer">
+                <span class="u_tab_bor">首页</span>
+                <span class="u_tab_bor">关于我们</span>
+                <span class="u_tab_bor">联系方式</span>
+                <span class="u_tab_bor">客服中心</span>
+                <span class="u_tab_bor">合作</span>
+                <span class="u_tab_bor">网站地图</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+
+        <script type="text/javascript" src="./js/thirdparty/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/thirdparty/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/detail.js"></script>
+    <script src="./js/thirdparty/jquery.raty.js"></script>
+    <script src="./js/ystep.js"></script>
+
+    <!--<script src ="./js/thirdparty/bootstrap-datatables/js/jquery.dataTables.js"></script>-->
+    <!--<script src ="./js/thirdparty/bootstrap-datatables/js/dataTables.bootstrap.js"></script>-->
+    <!--<script src ="./js/thirdparty/bootstrap-datatables/js/dataTables.tableTools.js"></script>-->
+
+    <script src ="./js/thirdparty/jquery.pagination.js"></script>
+</body>
+</html>

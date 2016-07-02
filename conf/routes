@@ -1,0 +1,51 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+# URL : /pageinit
+GET     /pageinit           controllers.InitController.pageInit(userName: String ?= "", password: String ?= "")
+
+GET     /getClassify           controllers.InitController.getClassify
+
+# URL : /login?userName=lili&password=123456
+GET     /login              controllers.LoginController.login(userName: String, password: String)
+
+GET     /regist             controllers.RegistorController.regist(username: String, password: String, phonenum: String, email: String)
+
+# URL : /publish?userid=1&name=xxx&classify=美工设计&description=yyy&fee=200.1&expectTime=2016-07-10
+GET     /publish            controllers.JobController.publish(userid: String, name: String, classify: String, description: String, fee: String, expectTime: String)
+
+# URL : /search?input=xxx,yyy&searchType=2 ,searchType=1,ID,searchType=2,keywords
+GET     /search            controllers.JobController.search(input: String, searchType: String)
+
+GET     /userinfo/basicinfos  controllers.UserInfoPageController.getUserBasicInfo(userid:String)
+
+GET     /userinfo/jobinfos    controllers.UserInfoPageController.getUserJobInfo(userid:String)
+
+GET     /jobdetails/basicinfos  controllers.JobDetailsController.getJobBasicInfos(jobid:String)
+
+GET     /jobdetails/gettenderuser  controllers.JobDetailsController.getTenderUserList(jobid:String)
+
+GET     /permission/getpermission  controllers.PermissionController.judgeAction(userid:String,jobid:String)
+
+GET     /permission/gethirepermission  controllers.PermissionController.judgeHireAction(userid:String,jobid:String)
+
+GET     /permission/publish  controllers.PermissionController.publishAction(userid:String,jobid:String)
+
+GET     /permission/tender  controllers.PermissionController.tenderAction(userid:String,jobid:String)
+
+GET     /permission/hire  controllers.PermissionController.hireAction(userid:String,jobid:String)
+
+GET     /permission/devdone  controllers.PermissionController.devDoneAction(userid:String,jobid:String)
+
+GET     /permission/check  controllers.PermissionController.checkAction(userid:String,jobid:String)
+
+GET     /permission/checkdone  controllers.PermissionController.checkDoneAction(userid:String,jobid:String)
+
+GET     /permission/checkconfirm  controllers.PermissionController.checkConfirmAction(userid:String,jobid:String)
+
+GET     /submitJudgement    controllers.JudgeController.submitJudgement(jobId: String, judgeType: String, publisherId: String, developerId: String, judgement: String, score: String)
+
+GET     /*file              controllers.Assets.versioned(path="/public/web", file: Asset)
+

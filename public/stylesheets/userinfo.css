@@ -1,0 +1,67 @@
+body{
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+
+.tt{
+    border:solid 1px red;
+    height:800px;
+}
+
+.u_nav {
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 0px;
+    height: 50px;
+    background-color: #3399FF;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-weight: 500;
+    font-family: "Microsoft YaHei" ! important;
+    font-size: 16px;
+}
+
+#count{
+    color: red;
+    padding-left: 10px;
+}
+
+.u_count{
+    font-weight:bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.u_info{
+    background-color: #EEF2F5;
+}
+
+.u_info_tab td{
+    padding-top:5px;
+    padding-left:18px;
+}
+
+i{
+    color:#00DCAE;
+}
+
+.u_tab_bor {
+    border-right: solid 1px #ddd;
+}
+#usertag{
+    border-right: solid 1px #ddd;
+}
+.u_tab_info{
+    margin-left: 22px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.u_tab_desc {
+    height: 50px;
+    padding-left: 39px !important;
+}
+

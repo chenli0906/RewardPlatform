@@ -1,0 +1,54 @@
+.modal-dialog{
+    width:350px;
+}
+
+.login-title{
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Microsoft YaHei" ! important;
+}
+.modal-header{
+    padding: 10px;
+}
+
+.login-button {
+    width: 255px;
+    box-shadow: 1px 1px 1px 0px #7D7D7D;
+    height:32px;
+}
+
+.login-content {
+    margin: 15px 5px;
+    font-size: 16px;
+    height: 40px;
+    text-align: center;
+    padding-top: 7px;
+}
+.login-content label {
+    width: 90px;
+}
+
+.modal-body{
+    padding:5px;
+}
+.inputStyle {
+    width: 180px;
+    height: 32px;
+}
+span#loginPageInfo,span#registerPageInfo {
+    margin-left: 31px;
+    color:red;
+}
+a{
+    cursor:pointer;
+    text-decoration:none;
+}
+
+#wlogin,#wregis,#userinfo{
+    float:right;
+    text-decoration:none;
+    padding-right:10px;
+}
+

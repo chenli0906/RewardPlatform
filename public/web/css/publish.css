@@ -1,0 +1,41 @@
+.pub_title{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Microsoft YaHei" ! important;
+    padding: 10px;
+}
+
+#pub_title{
+    width: 300px;
+    box-shadow: 1px 1px 0px 0px #E8E8E8;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.business-mode{
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.bounty-mode{
+    font-weight: bold;
+    color: #F26B2F;
+    margin-bottom:7px;
+}
+
+.bounty-num{
+    font-weight: bold;
+    margin-bottom:7px;
+}
+
+#publish{
+    margin-left: 11px;
+    margin-top: 50px;
+    color: white;
+    background-color: #F26B2F;
+    width: 120px;
+    height: 41px;
+    font-size: 19px;
+    font-weight: bold;
+    border: none;
+}

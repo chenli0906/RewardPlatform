@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>个人中心</title>
+
+    <link rel="stylesheet" href="../javascripts/thirdparty/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/userinfo.css">
+    <link rel="stylesheet" type="text/css" href="../javascripts/thirdparty/font-awesome/css/font-awesome.css">
+</head>
+<body style='overflow:-Scroll;overflow-x:hidden'>
+
+    <div class="container-fluid">
+        <br>
+
+        <div class="row u_nav"><span>个人中心</span></div>
+
+        <div class="row">
+            <div class="col-md-2 tt">
+                1
+            </div>
+            <div class="col-md-8 tt">
+                <div class="u_count">
+                   <label>我的财富:</label><span id="count">5888<span>元</span></span>
+                </div>
+                <div class="u_info tt">
+                    <table class="u_info_tab" style="width:100%" cellspacing="1" >
+                        <tr style="height:30px"></tr>
+                        <tr>
+                            <td class="u_tab_bor">
+                                <i class="fa fa fa-user"></i>&nbsp;&nbsp;<label>会员信息</label>
+                                <div class="u_tab_info">
+                                    <span>手机</span><span id="phone"></span><br>
+                                    <span>邮箱</span><span id="email"></span>
+                                </div>
+                            </td>
+                            <td class="u_tab_bor">
+                                <i class="fa fa-star-o"></i>&nbsp;&nbsp;<label>信用等级</label>
+                                <div class="u_tab_info">
+                                    <span>开发信用</span><span></span><br>
+                                    <span>招标信用</span><span></span>
+                                </div>
+                            </td>
+                            <td class="u_tab_bor">
+                                <i class="fa fa-file-text-o"></i>&nbsp;&nbsp;<label>任务概览</label>
+                                <div class="u_tab_info">
+                                    <span>正在发布的需求</span><span id="publishing"></span>&nbsp;&nbsp;<span>正在开发的需求</span><span id="developing"></span><br>
+                                    <span>需求完成数</span><span id="published"></span>&nbsp;&nbsp;<span>开发完成数</span><span id="developed"></span><br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr >
+                            <td class="u_tab_desc">
+                                <span>用户简介</span>
+                                <span id="usertag"></span>&nbsp;&nbsp;
+                                <i class="fa fa-pencil-square-o"></i>
+                            </td>
+                            <td><span id="description"></span></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+            <div class="col-md-2 tt">
+                3
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-2 tt">
+        </div>
+        <div class="col-md-8 tt">
+            <div>
+                <label>我的任务</label>
+            </div>
+            <div>
+                <div>开发中</div>
+                <div>发布中</div>
+                <div>已完成</div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="col-md-2 tt">
+        </div>
+    </div>
+
+        <script type="text/javascript" src="../javascripts/thirdparty/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../javascripts/thirdparty/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../javascripts/userinfo.js"></script>
+</body>
+</html>

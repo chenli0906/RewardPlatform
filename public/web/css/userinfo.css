@@ -1,0 +1,131 @@
+body{
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+
+.u_nav {
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 0px;
+    height: 50px;
+    background-color: #F26B2F;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-weight: 500;
+    font-family: "Microsoft YaHei" ! important;
+    font-size: 16px;
+}
+
+#count{
+    color: red;
+    padding-left: 10px;
+}
+
+.u_count{
+    font-weight:bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+.u_info{
+    background-color: #EEF2F5;
+}
+
+.u_info_tab td{
+    padding-top:5px;
+    padding-left:18px;
+}
+
+i{
+    color:#00DCAE;
+}
+
+.u_tab_bor {
+    border-right: solid 1px #ddd;
+}
+
+.u_tab_info{
+    margin-left: 22px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.u_tab_desc {
+    height: 50px;
+    padding-left: 39px !important;
+}
+
+.task_tag{
+    float: left;
+    width: 90px;
+    height: 40px;
+    border: solid 1px #BCBCBC;
+    text-align: center;
+    line-height: 40px;
+    color: #999;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.task-selected{
+    background-color:#F26B2F;
+    color:white;
+    border:solid 1px #F26B2F;
+}
+.task_title{
+    height: 60px;
+    color: #797979;
+    font-size: 20px;
+    padding-top: 18px;
+}
+
+.task{
+    border: solid 1px #E4E4E4;
+    padding-left: 15px;
+    height: 150px;
+    margin-top: 5px;
+}
+
+.tasktop{
+    background: #F2F2F2;
+    height: 15px;
+    margin-bottom: 10px;
+    margin-left: -15px;
+}
+.taskname{
+    font-weight: bold;
+    font-size: 25px;
+    padding-right: 10px;
+}
+.tasktype{
+    font-size: 18px;
+}
+.taskstatus{
+    border: solid 3px red;
+    padding: 11px;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.taskdeadline{
+    font-family: "Microsoft YaHei" ! important;
+    padding-left: 80px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+.taskcount{
+    font-family: "Microsoft YaHei" ! important;
+    padding-left: 80px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+.taskdetail{
+    font-family: "Microsoft YaHei" ! important;
+    padding-left: 80px;
+    padding-right: 20px;
+    font-size: 18px;
+}

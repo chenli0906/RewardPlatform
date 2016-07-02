@@ -1,0 +1,99 @@
+body{
+    font-family: "Microsoft YaHei" ! important;
+}
+
+.d_info{
+    padding: 40px 20px 40px 20px;
+    background-color: #FAFAFA;
+    border: solid 1px #9F9F9F;
+}
+
+.d_count_title{
+    font-family: "Microsoft YaHei" ! important;
+    border: solid 1px #F26B2F;
+    padding: 5px;
+    color: white;
+    background-color: #F26B2F;
+}
+
+.d_count_num{
+    font-family: "Microsoft YaHei" ! important;
+    border: solid 1px #F26B2F;
+    padding: 5px;
+    color: #9F9F9F;
+}
+.d_complete_photo{
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.d_taskname{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.task_progress{
+    transform: scale(1.2,1.2);
+    margin-left: 78px;
+}
+
+.d_req{
+    padding: 20px;
+    border: solid 1px #9F9F9F;
+}
+
+.d_req span{
+    font-weight: bold;
+        font-size: 16px;
+}
+
+.d_req textarea{
+    margin-top: 10px;
+    width: 800px;
+    height: 120px;
+    max-height: 120px;
+    border:none;
+}
+
+.d_pub{
+    border: solid 1px #9F9F9F;
+    background-color: #F9F9F9;
+    padding: 20px;
+    height: 110px;
+}
+
+.d_photo{
+    width: 70px;
+    height: 70px;
+    float:left;
+}
+
+.d_user{
+    margin-left: 30px;
+    line-height: 40px;
+}
+
+.d_time{
+    margin-left: 30px;
+}
+
+.d_complete{
+}
+
+.completer{
+    height: 100px;
+    padding: 15px 0 10px 20px;
+    border: solid 1px #9F9F9F;
+    margin-top: 20px;
+}
+
+.completer .tname{
+    margin-left: 30px;
+    line-height: 40px;
+}
+
+.completer .cred{
+    margin-left: 30px;
+}
+

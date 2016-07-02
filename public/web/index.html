@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>首页</title>
+
+    <link rel="stylesheet" href="./js/thirdparty/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/thirdparty/bootstrap-select/bootstrap-select.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <br>
+    <img style="margin-left: 220px;" src="./images/logo.png">
+    <a id="userinfo" href="./userinfo.html">个人中心</a>
+    <a id="wregis">免费注册</a>
+    <a id="wlogin">你好,请<span style="color:#C82613">登录</span></a>
+
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-8">
+                <div class="search">
+                    <div style="background-color: white;opacity: 0.7;margin-top: 125px;">
+                        <select id="s_type"  name="s_type" class="selectpicker show-tick" data-size="5" value="<%=search.type||''%>">
+                            <option>寻找需求</option>
+                            <option>寻找服务</option>
+                        </select>
+                        <input type="text" id="s-content" class="s-content"/>
+                        <button class="s-button"><a href="tasklist.html">搜索</a></button>
+                        <button class="s-publish"><a href="publish.html">发布需求</a></button>
+                    </div>
+                </div>
+                <div class="s_classify">
+                    <table width="100%">
+                        <tr>
+                            <td><div class="classify-format">
+                                <!--<span class="s-class-title">美术设计</span>-->
+                                <img style="width: 115px;height: 129px;float:left" src="./images/design.png">
+                                <span id="jump1" style="margin-left: 20px;font-weight: bold;font-size: 16px;line-height: 40px;">美术设计 | desgin</span>
+                                <ol id="designer" class="s-class-con">
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                </ol>
+                            </div></td>
+                            <td><div class="classify-format">
+                                <!--<span class="s-class-title">软件开发</span>-->
+                                <img style="width: 115px;height: 129px;float:left" src="./images/soft.png">
+                                <span id="jump2" style="margin-left: 20px;font-weight: bold;font-size: 16px;line-height: 40px;">软件开发 | soft</span>
+                                <ol id="softdev" class="s-class-con">
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                </ol>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="classify-format">
+                                <!--<span class="s-class-title">文档处理</span>-->
+                                <img style="width: 115px;height: 129px;float:left" src="./images/home.png">
+                                <span id="jump3" style="margin-left: 20px;font-weight: bold;font-size: 16px;line-height: 40px;">家具装修 | home</span>
+                                <ol id="doc" class="s-class-con">
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                </ol>
+                            </div></td>
+                            <td><div class="classify-format">
+                                <!--<span class="s-class-title">其他类型</span>-->
+                                <img style="width: 115px;height: 129px;float:left" src="./images/other.png">
+                                <span id="jump4" style="margin-left: 20px;font-weight: bold;font-size: 16px;line-height: 40px;">其他需求 | other</span>
+                                <ol id="other" class="s-class-con">
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                    <li>xx</li>
+                                </ol>
+                            </div></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <button type="button" class="close"
+                                data-dismiss="modal" aria-hidden="true" style="margin-right:20px">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div id="loginTitle" class="col-md-6 login-title">
+                            登录
+                        </div>
+                        <div id="registerTitle" class="col-md-6 login-title">
+                            注册
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div id="loginPage">
+                        <div class="login-content">
+                            <label>账&nbsp&nbsp户：</label>
+                            <input id="username1" type="text" class="inputStyle"  placeholder="" />
+                        </div>
+                        <div class="login-content">
+                            <label>密&nbsp&nbsp码：</label>
+                            <input id="password1" type="password" class="inputStyle" placeholder="" />
+                        </div>
+                        <span id="loginPageInfo"></span>
+                        <div class="login-content">
+                            <button id="login" class="login-button" data-dismiss="modal">登录</button>
+                        </div>
+                    </div>
+                    <div id="registerPage" style="display:none">
+                        <div class="login-content">
+                            <label>账&nbsp&nbsp户：</label>
+                            <input id="username2" type="text" class="inputStyle"  placeholder="" />
+                        </div>
+                        <div class="login-content">
+                            <label>密&nbsp&nbsp码：</label>
+                            <input id="password2" type="password" class="inputStyle" placeholder="" />
+                        </div>
+                        <div class="login-content">
+                            <label>确认密码：</label>
+                            <input id="password3" type="password" class="inputStyle" placeholder="" />
+                        </div>
+                        <div class="login-content">
+                            <label>手&nbsp&nbsp机：</label>
+                            <input id="phone" type="text" class="inputStyle"  placeholder="" />
+                        </div>
+                        <div class="login-content">
+                            <label>邮&nbsp&nbsp箱：</label>
+                            <input id="email" type="text" class="inputStyle"  placeholder="" />
+                        </div>
+                        <span id="registerPageInfo"></span>
+                        <div class="login-content">
+                            <button id="register" class="login-button" data-dismiss="modal">注册</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<div class="modal-footer">-->
+                    <!--<button type="button" class="btn btn-default"-->
+                            <!--data-dismiss="modal">关闭-->
+                    <!--</button>-->
+                    <!--<button type="button" class="btn btn-primary">-->
+                        <!--提交更改-->
+                    <!--</button>-->
+                <!--</div>-->
+            </div><!-- /.modal-content -->
+        </div>
+    </div><!-- /.modal -->
+
+    <hr>
+    <div class="page-footer">
+        <span class="u_tab_bor">首页</span>
+        <span class="u_tab_bor">关于我们</span>
+        <span class="u_tab_bor">联系方式</span>
+        <span class="u_tab_bor">客服中心</span>
+        <span class="u_tab_bor">合作</span>
+        <span class="u_tab_bor">网站地图</span>
+    </div>
+
+</div>
+    <script type="text/javascript" src="./js/thirdparty/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="./js/thirdparty/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/thirdparty/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

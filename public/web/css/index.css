@@ -1,0 +1,154 @@
+body{
+font-family: "Microsoft YaHei" ! important;
+}
+ol li{
+    cursor: pointer;
+    color: blue;
+}
+.modal-dialog{
+    width:350px;
+}
+.tt{
+    border:solid 1px red;
+    height:800px;
+}
+
+.search{
+    padding: 5px;
+    background-color: #006699;
+    text-align: center;
+    background-image: url('./images/banner.png');
+    height: 200px;
+}
+#s_type{
+    background-color:white;
+}
+
+
+.s-content{
+    margin-left:10px;
+    height: 35px;
+    width:400px;
+}
+.s-button{
+    margin-left:10px;
+    height: 35px;
+    color: white;
+    background-color: #F26B2F;
+    width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+.s-publish{
+    margin-left: 10px;
+    height: 35px;
+    color: white;
+    background-color: #F26B2F;
+    width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
+
+.logo{
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei" ! important;
+}
+
+.s_classify{
+    background-color: #F2F2F2;
+    margin-top: 20px;
+}
+
+.classify-format{
+    height: 130px;
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 1px;
+}
+
+.s-class-title{
+    float: left;
+    width: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.s-class-con{
+    margin-left: 115px;
+    height: 100%;
+    line-height: 21px;
+}
+
+.login-title{
+    text-align: center;
+    font-weight:bold;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Microsoft YaHei" ! important;
+}
+.modal-header{
+    padding: 10px;
+}
+
+.login-button {
+    width: 255px;
+    box-shadow: 1px 1px 1px 0px #F26B2F;
+    height:32px;
+    background-color: #F26B2F;
+}
+
+.login-content {
+    margin:15px 5px;
+    font-size: 16px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+}
+.login-content label {
+    width: 90px;
+}
+
+.modal-body{
+    padding:5px;
+}
+.inputStyle {
+    width: 180px;
+    height: 32px;
+}
+span#loginPageInfo,span#registerPageInfo {
+    margin-left: 31px;
+    color:red;
+}
+a{
+    cursor:pointer;
+    text-decoration:none;
+}
+
+#wlogin,#wregis,#userinfo{
+    float:right;
+    text-decoration:none;
+    padding-right:10px;
+}
+
+.page-footer{
+    padding: 50px 5px;
+    text-align: center;
+}
+
+.page-footer span {
+    padding: 5px 7px 0 0px;
+    font-size: 5px;
+}
+
+#jump1,#jump2,#jump3,#jump4{
+    cursor:pointer;
+}
+
